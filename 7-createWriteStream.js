@@ -1,5 +1,11 @@
 const fs = require("fs");
 
+const folderName = "bigfiles";
+fs.mkdir(folderName, { recursive: true }, (err) => {
+  if (err) throw err;
+  console.log(`Папка ${folderName} создана`);
+});
+
 const file = fs.createWriteStream("./bigfiles/bigfile.txt");
 
 for (let i = 0; i < 1000000; i++) {
