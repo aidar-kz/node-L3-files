@@ -4,4 +4,5 @@
 // require("./4-copyFile");
 // require("./5-rm");
 // require("./6-folders");
-require("./7-createWriteStream");
+// require("./7-createWriteStream");
+require("./practice");
